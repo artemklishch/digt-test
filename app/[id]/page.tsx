@@ -23,11 +23,11 @@ const LaunchDetailsPage: FC<Props> = async ({params}) => {
                 <h3 className="font-semibold text-md">Links:</h3>
                 <ul className="ml-4">
                     {launch.links.webcast &&
-                        <li><a href={launch.links.webcast} className="text-blue-500 underline">Webcast</a></li>}
+                        <li><a href={launch.links.webcast} target="_blank" className="text-blue-500 underline">Webcast</a></li>}
                     {launch.links.wikipedia &&
-                        <li><a href={launch.links.wikipedia} className="text-blue-500 underline">Wikipedia</a></li>}
+                        <li><a href={launch.links.wikipedia} target="_blank" className="text-blue-500 underline">Wikipedia</a></li>}
                     {launch.links.reddit.launch &&
-                        <li><a href={launch.links.reddit.launch} className="text-blue-500 underline">Reddit</a></li>}
+                        <li><a href={launch.links.reddit.launch} target="_blank" className="text-blue-500 underline">Reddit</a></li>}
                 </ul>
             </section>
             <section className="my-6">
